@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Quick Chicken</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        h1 {
+            text-align: center;
+            color: #9b1919;
+        }
+    
+        .category {
+            margin-bottom: 40px;
+        }
+    
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #f29a2e;
+            text-align: center;
+        }
+    
+        .card {
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding-right: 20px;
+            margin-bottom: 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+    
+        .card-image {
+            width: 200px;
+            height: auto;
+            margin-right: 20px;
+            object-fit: cover;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+    
+        .card-content {
+            flex: 1;
+        }
+    
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #cf2121;
+        }
+    
+        .price {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    
+        .ingredients {
+            font-style: italic;
+            color: #888;
+        }
+    
+        .additional-info {
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div style="display: flex;">
+            <a href="index.html">
+                <img class="logo" src="assets/img/logo.svg">
+            </a>
+        </div>
+
+        <div>
+            <a class="navbar-link" href="index.html">Home</a>
+            <a class="navbar-link active" href="menu.html">Menu</a>
+            <a class="navbar-link" href="about.html">About Us</a>
+            <a class="navbar-link" href="contact.html">Contact Us</a>
+        </div>
+
+        <div>
+            <a href="order.html">
+                <button class="navbar-button" type="button">Order Now</button>
+            </a>
+           
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Menu</h1>
+
+        <div class="category">
+            <h2>BBQ Chicken</h2>
+
+            <div class="card">
+                <img src="assets/prod-img/baked_bbq_chicken.jpg" alt="Baked BBQ Chicken" class="card-image">
+                <div class="card-content">
+                    <h3>Baked BBQ Chicken</h3>
+                    <p>Tender chicken baked to perfection and smothered in a tangy BBQ sauce.</p>
+                    <p class="price">$14.99</p>
+                    <p class="ingredients">Ingredients: Chicken, BBQ sauce, spices.</p>
+                    <p class="additional-info">Additional Info: Our Baked BBQ Chicken is a customer favorite, known for
+                        its
+                        juicy and flavorful taste. It pairs well with a side of coleslaw or roasted vegetables.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/prod-img/honey_barbecue_chicken.jpg" alt="Honey Barbecue Chicken" class="card-image">
+                <div class="card-content">
+                    <h3>Honey Barbecue Chicken</h3>
+                    <p>Juicy chicken glazed with a sweet and tangy honey barbecue sauce.</p>
+                    <p class="price">$17.99</p>
+                    <p class="ingredients">Chicken, honey, barbecue sauce, spices.</p>
+                    <p class="additional-info">Additional Info: Our Honey Barbecue Chicken is a crowd-pleaser, combining
+                        the
+                        perfect balance of sweetness and smokiness. It pairs well with a side of cornbread or mashed
+                        potatoes.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="category">
+            <h2>Chicken Pizza</h2>
+
+            <div class="card">
+                <img src="assets/prod-img/barbecue_chicken_pizza.jpg" alt="Barbecue Chicken Pizza" class="card-image">
+                <div class="card-content">
+                    <h3>Barbecue Chicken Pizza</h3>
+                    <p>A mouthwatering pizza topped with tender chicken, tangy barbecue sauce, and melted cheese.</p>
+                    <p class="price">$19.99</p>
+                    <p class="ingredients">Ingredients: Chicken, barbecue sauce, pizza dough, cheese, onions, peppers.
+                    </p>
+                    <p class="additional-info">Additional Info: Our Barbecue Chicken Pizza is a popular choice among
+                        pizza
+                        lovers. The combination of savory chicken and tangy barbecue sauce creates a delightful flavor.
+                        Perfect for sharing with friends or as a quick meal on the go.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/prod-img/rotisserie_chicken_pizza.jpg" alt="Rotisserie Chicken Pizza"
+                    class="card-image">
+                <div class="card-content">
+                    <h3>Rotisserie Chicken Pizza</h3>
+                    <p>A delicious pizza topped with flavorful rotisserie chicken, melted cheese, and your choice of
+                        toppings.</p>
+                    <p class="price">$18.99</p>
+                    <p class="ingredients">Ingredients: Rotisserie chicken, pizza dough, cheese, tomato sauce, toppings
+                        of
+                        your choice.</p>
+                    <p class="additional-info">Additional Info: Our Rotisserie Chicken Pizza is a classic favorite. The
+                        tender and juicy rotisserie chicken adds a rich flavor to every bite. Customize it with your
+                        favorite toppings for a personalized pizza experience.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/prod-img/buffalo_chicken_pizza.jpg" alt="Buffalo Chicken Pizza" class="card-image">
+                <div class="card-content">
+                    <h3>Buffalo Chicken Pizza</h3>
+                    <p>A spicy pizza featuring buffalo chicken, tangy sauce, and melted cheese.</p>
+                    <p class="price">$15.99</p>
+                    <p class="ingredients">Ingredients: Chicken, buffalo sauce, pizza dough, cheese, celery, blue cheese
+                        dressing.</p>
+                    <p class="additional-info">Additional Info: Our Buffalo Chicken Pizza is a fiery delight for those
+                        who
+                        enjoy a kick of heat. The combination of buffalo chicken and melted cheese creates a perfect
+                        balance
+                        of flavors. Served with a side of celery sticks and blue cheese dressing.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="category">
+            <h2>Grilled Chicken</h2>
+
+            <div class="card">
+                <img src="assets/prod-img/cilantro_lime_grilled_chicken.jpg" alt="Cilantro Lime Grilled Chicken"
+                    class="card-image">
+                <div class="card-content">
+                    <h3>Cilantro Lime Grilled Chicken</h3>
+                    <p>Succulent chicken marinated in a zesty cilantro lime sauce and grilled to perfection.</p>
+                    <p class="price">$16.99</p>
+                    <p class="ingredients">Ingredients: Chicken, cilantro, lime, garlic, olive oil, spices.</p>
+                    <p class="additional-info">Additional Info: Our Cilantro Lime Grilled Chicken is a refreshing and
+                        flavorful option. It's perfect for those looking for a lighter, healthier choice. Served with a
+                        side
+                        of steamed vegetables or a fresh salad.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="category">
+            <h2>Chicken Wraps</h2>
+
+            <div class="card">
+                <img src="assets/prod-img/chicken_shawarma_grain_bowls.jpg" alt="Chicken Shawarma Grain Bowls"
+                    class="card-image">
+                <div class="card-content">
+                    <h3>Chicken Shawarma Grain Bowls</h3>
+                    <p>A wholesome grain bowl featuring tender chicken shawarma, mixed grains, and a variety of fresh
+                        vegetables.</p>
+                    <p class="price">$12.99</p>
+                    <p class="ingredients">Ingredients: Chicken, mixed grains (such as quinoa or rice), vegetables,
+                        spices,
+                        dressing.</p>
+                    <p class="additional-info">Additional Info: Our Chicken Shawarma Grain Bowls are a nutritious and
+                        satisfying option. Packed with protein and fiber, it's a perfect choice for a balanced meal.
+                        Customize it with your favorite vegetables and dressing.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="assets/prod-img/roast_chicken_gyros.jpg" alt="Roast Chicken Gyros" class="card-image">
+                <div class="card-content">
+                    <h3>Roast Chicken Gyros</h3>
+                    <p>A Greek-inspired dish with succulent roast chicken, wrapped in warm pita bread, and topped with
+                        tzatziki sauce and fresh vegetables.</p>
+                    <p class="price">$13.99</p>
+                    <p class="ingredients">Ingredients: Roast chicken, pita bread, tzatziki sauce, vegetables.</p>
+                    <p class="additional-info">Additional Info: Our Roast Chicken Gyros are a flavorful and filling
+                        option.
+                        The combination of tender roast chicken, tangy tzatziki sauce, and crisp vegetables creates a
+                        delightful taste. Served with a side of Greek salad or seasoned fries.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<footer>
+    <br>
+    <div>
+        <a href="https://www.facebook.com/salwa.hammad.357">
+            <img src="assets/img/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://x.com/Salwa00423653">
+            <img src="assets/img/twitter-x.svg" alt="Twitter" />
+        </a>
+        <a href="https://www.linkedin.com/in/salwa-hammad-ab05a6206">
+            <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+        </a>
+    </div>
+
+    <p style="color: #fff;">Copyrights &copy are reserved to QC</p>
+</footer>
+
+</html>
+
+

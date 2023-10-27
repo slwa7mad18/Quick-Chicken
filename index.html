@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Chicken</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Content */
+    
+        .list-of-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        /* Cards */
+    
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            flex-basis: calc(84% / 4);
+            margin: 2%;
+            text-align: center;
+            background-color: #fff;
+            height: 100%;
+            border-radius: 8px;
+        }
+    
+        .card h3 {
+            color: #e24b4b;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    
+        .card img {
+            height: 25vh;
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            object-fit: cover;
+        }
+    
+        .card .desc {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    
+        .card .price {
+            color: grey;
+            font-size: 22px;
+        }
+    
+        .card button:hover {
+            background-color: #cf2121;
+        }
+    
+        .card button:active {
+            background-color: #9b1919;
+        }
+    
+        /* Review Cards */
+    
+        .testimonials {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+    
+        .testimonials .review-card {
+            display: inline-block;
+            width: 300px;
+            padding: 20px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+            background-color: #fff;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+    
+        .testimonials .meal-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    
+        .testimonials .rating {
+            color: gold;
+        }
+    
+        .testimonials .star {
+            font-size: 20px;
+        }
+    
+        .testimonials .review {
+            margin-top: 10px;
+        }
+    
+        .testimonials .customer {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+    
+        .testimonials .customer-image {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    
+        .testimonials .customer-name {
+            font-weight: bold;
+            color: #f29a2e;
+        }
+    
+        .testimonials h4 {
+            color: #cf2121;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div style="display: flex;">
+            <a href="index.html">
+                <img class="logo" src="assets/img/logo.svg">
+            </a>
+        </div>
+
+        <div>
+            <a class="navbar-link active" href="index.html">Home</a>
+            <a class="navbar-link" href="menu.html">Menu</a>
+            <a class="navbar-link" href="about.html">About Us</a>
+            <a class="navbar-link" href="contact.html">Contact Us</a>
+        </div>
+
+        <div>
+            <a href="order.html">
+                <button class="navbar-button" type="button">Order Now</button>
+            </a>
+        </div>
+    </nav>
+
+
+    <div style="width: 100%; display: flex;">
+
+        <div style="width: 100%"><img src="assets/img/home-bg.png" alt=""
+                style="width: 100%; height: 88vh; object-fit: cover; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); position: relative; top:-15px;">
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 style="text-align: center; color: #9b1919;">We have a great collection of chicken meals ...</h2>
+        <div class="list-of-cards">
+            <div class="card">
+                <img src="assets/prod-img/baked_bbq_chicken.jpg" alt="" style="width:100%">
+                <h3>Baked BBQ Chicken</h3>
+                <p class="price">$14.99</p>
+                <p class="desc">Tender chicken baked with smoky barbecue sauce, creating a juicy and flavorful dish.</p>
+
+            </div>
+
+            <div class="card">
+                <img src="assets/prod-img/cilantro_lime_grilled_chicken.jpg" alt="" style="width:100%">
+                <h3>Cilantro Lime Grilled Chicken</h3>
+                <p class="price">$16.99</p>
+                <p class="desc">Juicy chicken marinated in a zesty blend of cilantro and lime, then grilled to
+                    perfection.</p>
+
+            </div>
+
+            <div class="card">
+                <img src="assets/prod-img/honey_barbecue_chicken.jpg" alt="" style="width:100%">
+                <h3>Honey Barbecue Chicken</h3>
+                <p class="price">$17.99</p>
+                <p class="desc">Succulent chicken coated in a sweet and tangy honey barbecue glaze.</p>
+
+            </div>
+
+            <div class="card">
+                <img src="assets/prod-img/barbecue_chicken_pizza.jpg" alt="" style="width:100%">
+                <h3>Barbecue Chicken Pizza</h3>
+                <p class="price">$19.99</p>
+                <p class="desc">A flavorful pizza featuring tender rotisserie chicken, complemented by a variety of
+                    toppings.</p>
+
+            </div>
+
+            <div class="card">
+                <img src="assets/prod-img/rotisserie_chicken_pizza.jpg" alt="" style="width:100%">
+                <h3>Rotisserie Chicken Pizza</h3>
+                <p class="price">$18.99</p>
+                <p class="desc">A flavorful pizza featuring tender rotisserie chicken, complemented by a variety of
+                    toppings.</p>
+
+            </div>
+
+            <div class="card">
+                <img src="assets/prod-img/buffalo_chicken_pizza.jpg" alt="" style="width:100%">
+                <h3>Buffalo Chicken Pizza</h3>
+                <p class="price">$15.99</p>
+                <p class="desc">A spicy pizza creation with buffalo sauce, chicken, and a blend of cheeses.</p>
+
+            </div>
+
+            <div class="card">
+                <img src="assets/prod-img/chicken_shawarma_grain_bowls.jpg" alt="" style="width:100%">
+                <h3>Chicken Shawarma Grain Bowls</h3>
+                <p class="price">$12.99</p>
+                <p class="desc">Wholesome grain bowls filled with seasoned chicken shawarma, fresh vegetables, and
+                    flavorful sauces.</p>
+
+            </div>
+
+            <div class="card">
+                <img src="assets/prod-img/roast_chicken_gyros.jpg" alt="" style="width:100%">
+                <h3>Roast Chicken Gyros</h3>
+                <p class="price">$13.99</p>
+                <p class="desc">Mouthwatering gyros filled with succulent roast chicken, accompanied by traditional
+                    toppings and sauces.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <h2 style="color: #9b1919;">Our Customer Reviews</h2>
+        <div class="review-card">
+            <div class="meal-info">
+                <h4>Baked BBQ Chicken</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+            </div>
+            <p class="review">The Baked BBQ Chicken at Quick Chicken is absolutely delicious! The chicken is tender and
+                the
+                BBQ sauce is tangy and flavorful. Highly recommended!</p>
+            <div class="customer">
+                <img src="assets/img/user-50.png" alt="Customer 1" class="customer-image">
+                <p class="customer-name">Desmond Eagle</p>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="meal-info">
+                <h4>Buffalo Chicken Pizza</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+            </div>
+            <p class="review">The Buffalo Chicken Pizza is a must-try! The combination of tender chicken, melted cheese,
+                and flavorful toppings is simply amazing. I can't get enough of it!</p>
+            <div class="customer">
+                <img src="assets/img/user-50.png" alt="Customer 2" class="customer-image">
+                <p class="customer-name">Douglas Lyphe</p>
+            </div>
+        </div>
+        <div class="review-card">
+            <div class="meal-info">
+                <h4>Roast Chicken Gyros</h4>
+                <div class="rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+            </div>
+            <p class="review">The Roast Chicken Gyros is absolutely fantastic! The flavors are fresh and vibrant,
+                and the chicken is always cooked to perfection. I highly recommend it!</p>
+            <div class="customer">
+                <img src="assets/img/user-50.png" alt="Customer 3" class="customer-image">
+                <p class="customer-name">Gustav Purpleson</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <br>
+    <div>
+        <a href="https://www.facebook.com/salwa.hammad.357">
+            <img src="assets/img/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://x.com/Salwa00423653">
+            <img src="assets/img/twitter-x.svg" alt="Twitter" />
+        </a>
+        <a href="https://www.linkedin.com/in/salwa-hammad-ab05a6206">
+            <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+        </a>
+    </div>
+
+    <p style="color: #fff;">Copyrights &copy are reserved to QC</p>
+</footer>
+
+</html>
+
+

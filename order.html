@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now | Quick Chicken</title>
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .list-of-cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        /* Cards */
+    
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            flex-basis: calc(88% / 2);
+            margin: 3%;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    
+        .card h3 {
+            color: #e24b4b;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    
+        .card img {
+            height: 25vh;
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+            object-fit: cover;
+        }
+    
+        .card .desc {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+    
+        .card .price {
+            color: grey;
+            font-size: 22px;
+        }
+    
+        .card button {
+            border: none;
+            outline: 0;
+            padding: 12px;
+            color: white;
+            font-family: Poppins;
+            background-color: #f29a2e;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            align-self: last baseline;
+            border-radius: 0 0 8px 8px;
+        }
+    
+        .card button:hover {
+            background-color: #cf2121;
+        }
+    
+        .card button:active {
+            background-color: #9b1919;
+        }
+    
+        /* Checkout Bar */
+        .checkout-bar {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: fit-content;
+            margin-top: 6%;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+    
+        .checkout-items-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .checkout-item {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            white-space: nowrap;
+        }
+    
+        .checkout-item-info {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    
+        .checkout-item-info>img {
+            height: 32px;
+            width: 32px;
+            object-fit: cover;
+            margin-left: 16px;
+            margin-right: 8px;
+        }
+    
+        .checkout-item-info>p {
+            text-align: start;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    
+        .checkout-item-price {
+            margin-right: 8px;
+        }
+    
+        .checkout-item-controls {
+            display: flex;
+            align-items: center;
+            margin-left: 8px;
+            margin-right: 16px;
+        }
+    
+        .checkout-item-quantity-controls {
+            position: relative;
+            display: inline-flex;
+            vertical-align: middle;
+        }
+    
+        .checkout-item-quantity-plus {
+            background: none;
+            color: #e24b4b;
+            border: solid 2px #e24b4b;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+    
+        .checkout-item-quantity-minus {
+            background: none;
+            color: #e24b4b;
+            border: solid 2px #e24b4b;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+    
+        .checkout-item-quantity-plus:hover,
+        .checkout-item-quantity-minus:hover {
+            color: #fff;
+            border-color: #cf2121;
+            background: #cf2121;
+        }
+    
+        .checkout-item-quantity-plus:active,
+        .checkout-item-quantity-minus:active {
+            color: #fff;
+            border-color: #9b1919;
+            background: #9b1919;
+        }
+    
+        .checkout-item-quantity {
+            color: #e24b4b;
+            padding-right: 4px;
+            padding-left: 4px;
+            border-top: solid 2px #e24b4b;
+            border-bottom: solid 2px #e24b4b;
+        }
+    
+        .checkout-button {
+            margin-bottom: 16px;
+            background: none;
+            color: #e24b4b;
+            border: solid #e24b4b;
+            border-radius: 16px;
+            padding: 8px;
+            margin: 16px;
+            font-family: Poppins;
+            font-weight: 600;
+        }
+    
+        .checkout-button:hover {
+            color: #fff;
+            border-color: #cf2121;
+            background: #cf2121;
+        }
+    
+        .checkout-button:active {
+            color: #fff;
+            border-color: #9b1919;
+            background: #9b1919;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div style="display: flex;">
+            <a href="index.html">
+                <img class="logo" src="assets/img/logo.svg">
+            </a>
+            
+        </div>
+
+        <div>
+            <a class="navbar-link" href="index.html">Home</a>
+            <a class="navbar-link" href="menu.html">Menu</a>
+            <a class="navbar-link" href="about.html">About Us</a>
+            <a class="navbar-link" href="contact.html">Contact Us</a>
+        </div>
+
+        <div>
+            <a href="order.html">
+                <button class="navbar-button" type="button">Order Now</button>
+            </a>
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1 style="text-align: center; color: #9b1919;">Order Now</h1>
+
+        <div style="display: flex;">
+            <div style="width: calc(2 * (100% / 3)); margin: 1%; display: flex; align-content: center;">
+                <div class="list-of-cards">
+                    <div class="card">
+                        <div><img src="assets/prod-img/baked_bbq_chicken.jpg" alt="" style="width:100%">
+                            <h3>Baked BBQ Chicken</h3>
+                            <p class="price">$14.99</p>
+                            <p class="desc">Tender chicken baked with smoky barbecue sauce, creating a juicy and
+                                flavorful dish.</p>
+                        </div>
+                        <div><button>Add to Cart</button></div>
+                    </div>
+
+                    <div class="card">
+                        <div><img src="assets/prod-img/cilantro_lime_grilled_chicken.jpg" alt="" style="width:100%">
+                            <h3>Cilantro Lime Grilled Chicken</h3>
+                            <p class="price">$16.99</p>
+                            <p class="desc">Juicy chicken marinated in a zesty blend of cilantro and lime, then grilled
+                                to
+                                perfection.</p>
+                        </div>
+                        <div><button>Add to Cart</button></div>
+                    </div>
+
+                    <div class="card">
+                        <div><img src="assets/prod-img/honey_barbecue_chicken.jpg" alt="" style="width:100%">
+                            <h3>Honey Barbecue Chicken</h3>
+                            <p class="price">$17.99</p>
+                            <p class="desc">Succulent chicken coated in a sweet and tangy honey barbecue glaze.</p>
+                        </div>
+                        <div><button>Add to Cart</button></div>
+                    </div>
+
+                    <div class="card">
+                        <div><img src="assets/prod-img/barbecue_chicken_pizza.jpg" alt="" style="width:100%">
+                            <h3>Barbecue Chicken Pizza</h3>
+                            <p class="price">$19.99</p>
+                            <p class="desc">A flavorful pizza featuring tender rotisserie chicken, complemented by a
+                                variety of
+                                toppings.</p>
+                        </div>
+                        <div><button>Add to Cart</button></div>
+                    </div>
+
+                    <div class="card">
+                        <div><img src="assets/prod-img/rotisserie_chicken_pizza.jpg" alt="" style="width:100%">
+                            <h3>Rotisserie Chicken Pizza</h3>
+                            <p class="price">$18.99</p>
+                            <p class="desc">A flavorful pizza featuring tender rotisserie chicken, complemented by a
+                                variety of
+                                toppings.</p>
+                        </div>
+                        <div><button>Add to Cart</button></div>
+                    </div>
+
+                    <div class="card">
+                        <div><img src="assets/prod-img/buffalo_chicken_pizza.jpg" alt="" style="width:100%">
+                            <h3>Buffalo Chicken Pizza</h3>
+                            <p class="price">$15.99</p>
+                            <p class="desc">A spicy pizza creation with buffalo sauce, chicken, and a blend of cheeses.
+                            </p>
+                        </div>
+                        <div><button>Add to Cart</button></div>
+                    </div>
+
+                    <div class="card">
+                        <div><img src="assets/prod-img/chicken_shawarma_grain_bowls.jpg" alt="" style="width:100%">
+                            <h3>Chicken Shawarma Grain Bowls</h3>
+                            <p class="price">$12.99</p>
+                            <p class="desc">Wholesome grain bowls filled with seasoned chicken shawarma, fresh
+                                vegetables, and
+                                flavorful sauces.</p>
+                        </div>
+                        <div><button>Add to Cart</button></div>
+                    </div>
+
+                    <div class="card">
+                        <div><img src="assets/prod-img/roast_chicken_gyros.jpg" alt="" style="width:100%">
+                            <h3>Roast Chicken Gyros</h3>
+                            <p class="price">$13.99</p>
+                            <p class="desc">Mouthwatering gyros filled with succulent roast chicken, accompanied by
+                                traditional
+                                toppings and sauces.</p>
+                        </div>
+                        <div><button>Add to Cart</button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="width: calc(100% / 3); margin: 1%; display: flex; align-content: center;">
+                <div class="checkout-bar">
+                    <h2 style="color: #cf2121;">Your Cart</h2>
+                    <div class="checkout-items-container">
+                        <div class="checkout-item">
+                            <div class="checkout-item-info">
+                                <img src="assets/prod-img/baked_bbq_chicken.jpg" alt="" />
+                                <p>Baked BBQ Chicken</p>
+                            </div>
+
+                            <div class="checkout-item-controls">
+                                <span class="checkout-item-price">($14.99)</span>
+
+                                <div class="checkout-item-quantity-controls">
+                                    <button class="checkout-item-quantity-plus">+</button>
+                                    <span class="checkout-item-quantity">1</span>
+                                    <button class="checkout-item-quantity-minus">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout-item">
+                            <div class="checkout-item-info">
+                                <img src="assets/prod-img/chicken_shawarma_grain_bowls.jpg" alt="" />
+                                <p>Chicken Shawarma Grain Bowls</p>
+                            </div>
+
+                            <div class="checkout-item-controls">
+                                <span class="checkout-item-price">($12.99)</span>
+
+                                <div class="checkout-item-quantity-controls">
+                                    <button class="checkout-item-quantity-plus">+</button>
+                                    <span class="checkout-item-quantity">1</span>
+                                    <button class="checkout-item-quantity-minus">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 16px;">Total: <span id="total-price">$27.98</span></div>
+                    <button class="checkout-button" type="submit">
+                        Check Out
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <br>
+    <div>
+        <a href="https://www.facebook.com/salwa.hammad.357">
+            <img src="assets/img/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://x.com/Salwa00423653">
+            <img src="assets/img/twitter-x.svg" alt="Twitter" />
+        </a>
+        <a href="https://www.linkedin.com/in/salwa-hammad-ab05a6206">
+            <img src="assets/img/linkedin.svg" alt="LinkedIn" />
+        </a>
+    </div>
+
+    <p style="color: #fff;">Copyrights &copy are reserved to QC</p>
+</footer>
+
+</html>
+
+
